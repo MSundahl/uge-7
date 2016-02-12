@@ -1,0 +1,35 @@
+package uge6;
+
+import java.util.Scanner;
+
+public class Øvelse4 {
+	public static void main(String[] args) {
+		
+		System.out.println("Guess a number between 1 og 20"); 	//En titel printes
+		
+		int random = (int)(Math.random()*20+1);					/*Et tal genereret ved Math.random gemmes i en int variabel
+                    		 														* Der ganges med 20 og plus 1 fordi Math.random generere et tal mellem 0 og 1*/
+		Scanner input = new Scanner(System.in);					// Der oprettes en ny scanner
+		int guess;												              // En int variabel oprettes og tildeles ikke nogen værdi endnu
+		int count = 0;										            	// Int oprettes og tildeles værdien 0
+		
+		do{													                  	//Et do-while loop initialiseres
+			System.out.print("Guess: ");						      // Det blive bedt om et gæt som gemmes i int guess
+			guess = input.nextInt();
+			count ++;											                // Det lægges 1 til count hver gang der gættes
+			if (guess < random){								          /* En række if else-if-else oprettes som tjekker om tallet er højere,
+			 													                     * lavere eller lig med tallet i random*/ 
+				System.out.println("The number is higher");
+			} else if ( guess > random){
+				System.out.println("The number is lower");
+			} else {
+				System.out.println("You have guessed corretly, you used " + count + " guesses.");
+			}
+					
+		} while (guess != random);								    // Loopet køres så længe guess ikke er lig med random
+		
+		
+		
+		input.close();
+	}
+}
