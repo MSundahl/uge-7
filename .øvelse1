@@ -4,12 +4,12 @@ public class Øvelse1 {
 
 	public static void main(String[] args) {
 		
-		int i = 100;
-		while (i >=1){
-			if (i % 2 == 0){
+		int i = 100;				// Der oprettes en variabel af typen int, som tildeles værdien 100
+		while (i >=1){				// Et while loop initialiseres som udføres så længe i er større end 1
+			if (i % 2 == 0){		// En if-sætning som undersøger om i er et lige tal vha. modules, hvis true printes i 
 			System.out.println(i);
 			}
-			i--;
+			i--;				// i tælles 1 ned
 		}
 	}
 
