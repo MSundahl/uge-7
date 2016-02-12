@@ -1,0 +1,23 @@
+package uge6;
+
+//import java.util.Scanner;
+
+public class Øvelse3 {
+	public static void main(String[] args) {
+	
+		/* Der intialiseres 2 for loop, hvor det ene loop et nestet i den første.
+		 * I begge loop oprettes en int variabel x og y
+		 * Det yderste starter ved 2 og løber til 10, det at selve tabellerne,
+		 * det inderste starter ved 1 og løber til 10, det tabel ganges med.
+		 * Systemet print x ganget med y i det inderste loop og i det yderste loop
+		 * laves en ny linje, hver gang der er tale om en ny tabel*/
+		
+		for (int x = 2; x <= 10; x++){			
+			for (int y = 1; y <= 10; y++){
+				System.out.print(x*y + " ");
+			}
+			System.out.println();
+		}
+		
+	}
+}
